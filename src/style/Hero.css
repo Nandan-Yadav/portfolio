@@ -1,0 +1,112 @@
+/* Hero.css */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  margin: 7%;
+  gap: 20px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.highlight {
+  color: var(--secondary-green);
+  font-weight: bold;
+}
+
+.profile-pic {
+  width: 40%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease-in, filter 0.3s ease-in;
+}
+
+.profile-pic:hover {
+  filter: brightness(0.8);
+  box-shadow: 0px 0px 12px var(--secondary-green);
+}
+
+.my-name {
+  font-size: var(--h1-font-size-xs);
+}
+.my-intro {
+  font-size: var(--p-font-size-xs);
+  line-height: 2rem;
+}
+
+/* ---------------------------------------media quorey ----------------------------- */
+/* xS */
+@media (min-width: 475px) {
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .my-name {
+    font-size: var(--h1-font-size-sm);
+  }
+  .my-intro {
+    font-size: var(--p-font-size-sm);
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 0px 20px;
+    flex-direction: row;
+    text-align: start;
+  }
+
+  .profile-info {
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .my-name {
+    font-size: var(--h1-font-size-md);
+  }
+  .my-intro {
+    font-size: var(--p-font-size-md);
+  }
+}
+
+/* Lg */
+@media (min-width: 1024px) {
+  .my-name {
+    font-size: var(--h1-font-size-lg);
+  }
+  .my-intro {
+    font-size: var(--p-font-size-lg);
+  }
+}
+
+/* xL */
+@media (min-width: 1280px) {
+  .my-name {
+    font-size: var(--h1-font-size-xl);
+  }
+  .my-intro {
+    font-size: var(--p-font-size-xl);
+  }
+}
+
+/* 2xL */
+@media (min-width: 1536px) {
+  .my-name {
+    font-size: var(--h1-font-size-2xl);
+  }
+  .my-intro {
+    font-size: var(--p-font-size-2xl);
+  }
+}

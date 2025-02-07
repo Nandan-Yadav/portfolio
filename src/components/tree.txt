@@ -1,0 +1,22 @@
+Header
+├── h1 (Text: "Nandan")
+├── div (className="navy__items")
+│   └── NavyItems
+│       └── nav (className="navy__links")
+│           ├── a (href="#about", Text: "About")
+│           ├── a (href="#skills", Text: "Skills")
+│           ├── a (href="#projects", Text: "Projects")
+│           └── a (href="#contact", Text: "Contact")
+├── div (className="navy__right")
+│   ├── Handels
+│   │   └── div (className="navy__handales")
+│   │       ├── svg (Nav Icon 1)
+│   │       └── svg (Nav Icon 2)
+│   └── button (for menu icon)
+│       └── svg (Menu Icon)
+|
+|
+└── div (className="slider-menu")
+    ├── button (for close icon)
+    │   └── svg (Close Icon)
+    └── NavyItems
