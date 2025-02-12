@@ -1,0 +1,77 @@
+.skills-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 20px;
+    padding: 10px;
+    margin: 7%;
+  }
+  
+  .skills-heading {
+    font-size: var(--h1-font-size-xs);
+    text-align: center;
+    justify-self: center; /* Ensures heading stays centered */
+    grid-column: 1 / -1;  /* Spans the entire row in the grid */
+    margin-bottom: 20px;
+  }
+  
+  /* Skill Item Styling */
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid var(--secondary-green);
+    box-shadow: 1px 1.5px 0px var(--secondary-green);
+    border-radius: 10px;
+    transform: translateX(-10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill:hover {
+    box-shadow: 3px 3.5px 3px var(--secondary-green);
+    transform: translateX(-10px) scale(1.05);
+  }
+  
+  .skill span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .skill p {
+    font-size: var(--h1-font-size-xs);
+  }
+  
+  /* Responsive Media Queries for Heading Font Size */
+  
+  /* sm (Mobile layout) */
+  @media (min-width: 640px) {
+    .skills-heading {
+      font-size: var(--h1-font-size-sm);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .skills-heading {
+      font-size: var(--h1-font-size-md);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .skills-heading {
+      font-size: var(--h1-font-size-lg);
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .skills-heading {
+      font-size: var(--h1-font-size-xl);
+    }
+  }
+  
+  @media (min-width: 1536px) {
+    .skills-heading {
+      font-size: var(--h1-font-size-2xl);
+    }
+  }
+  

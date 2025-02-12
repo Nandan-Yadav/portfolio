@@ -1,0 +1,204 @@
+/* About.css */
+
+.about-section {
+  display: flex;
+  flex-direction: column; /* Stack items vertically by default */
+  padding: 10px;
+  align-items: flex-start;
+  margin: 7%;
+  gap: 20px;
+}
+
+/* Styles for screens less than 768px (mobile layout) */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-title {
+  font-size: var(--h1-font-size-xs);
+  text-align: center;
+}
+
+.about-paragraph {
+  font-size: var(--p-font-size-xs);
+  text-align: center;
+  line-height: 2rem;
+}
+
+/* --------------------------------- Technologies Section --------------------------------- */
+.technologies {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.technologies-title {
+  font-size: var(--h1-font-size-xs);
+  color: var(--primary-green);
+  text-align: center;
+}
+
+.technologies-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.technologies-list li {
+  font-size: var(--p-font-size-xs);
+  background-color: var(--primary-green);
+  color: var(--white-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: box-shadow 0.2s ease;
+}
+
+.technologies-list li:hover {
+  box-shadow: 1px 1.5px 2px var(--secondary-green);
+}
+
+/* ----------------------------------- Future Projects Section -----------------------------------*/
+.case-studies {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.case-studies-title {
+  font-size: var(--h1-font-size-xs);
+  color: var(--primary-green);
+  text-align: center;
+}
+
+.case-study {
+  border: 2px solid var(--secondary-green);
+  box-shadow: 2px 2.5px 0px var(--secondary-green);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.case-study:hover {
+  box-shadow: 4px 4.5px 4px var(--secondary-green);
+  transform: translateY(-3px) scale(1.02); /* Smooth lift and scale effect */
+}
+
+.case-study-heading {
+  text-align: center;
+  font-size: var(--h1-font-size-xs);
+  font-weight: 900;
+}
+
+.case-study-description {
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: var(--p-font-size-xs);
+}
+
+
+/* ------------------------------------------ Media Query ----------------------------------*/
+
+/* sm (Mobile layout) */
+@media (min-width: 640px) {
+  .about-title {
+    font-size: var(--h1-font-size-sm);
+  }
+
+  .about-paragraph {
+    font-size: var(--p-font-size-sm);
+  }
+}
+
+/* md (Tablate layout) */
+@media (min-width: 768px) {
+  .about-title {
+    font-size: var(--h1-font-size-md);
+  }
+  .about-paragraph {
+    font-size: var(--p-font-size-md);
+  }
+}
+
+/* lg (Larger screen sizes) */
+@media (min-width: 1024px) {
+  .about-section {
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+  }
+
+  .about-content {
+    width: 50%; 
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .case-studies {
+    width: 45%; 
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .about-title {
+    text-align: left;
+  }
+
+  .about-paragraph {
+    text-align: left;
+  }
+
+  .technologies {
+    align-items: flex-start;
+  }
+
+  .technologies-list {
+    justify-content: flex-start;
+  }
+
+  .case-studies-title {
+    text-align: left;
+  }
+
+  .case-study-heading {
+    text-align: left;
+  }
+
+  .case-study-description {
+    text-align: left;
+    font-size: var(--p-font-size-sm);
+  }
+
+  .about-title {
+    font-size: var(--h1-font-size-lg);
+  }
+  .about-paragraph {
+    font-size: var(--p-font-size-lg);
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .about-title {
+    font-size: var(--h1-font-size-xl);
+  }
+  .about-paragraph {
+    font-size: var(--p-font-size-xl);
+  }
+}
+
+/* 2xL */
+@media (min-width: 1536px) {
+  .about-title {
+    font-size: var(--h1-font-size-2xl);
+  }
+  .about-paragraph {
+    font-size: var(--p-font-size-2xl);
+  }
+}
