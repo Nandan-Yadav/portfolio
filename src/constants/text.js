@@ -1,5 +1,3 @@
-import 'devicon/devicon.min.css';
-
 /* ----------------------------- Header Section ------------------------------*/
 export const NAVBAR_TITLE = "Nandan";
 export const NAVBAR_LINKS = [
