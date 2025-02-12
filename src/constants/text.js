@@ -163,7 +163,7 @@ export const MY_PROJECTS = [
         description: "Developed a clustered model on an e-commerce company dataset of 541,909 customers using K-Means Clustering. Successfully identified distinct customer segments, enabling targeted marketing campaigns and personalized strategies. Applied data preprocessing techniques to improve model accuracy.",
         link: "https://github.com/Nandan-Yadav/Neuron-Lab-internship-projects/blob/main/Customer_Segmentation.ipynb",
         sector: "E-commerce"
-        , image: "/assets/images/e-commerce.jpg"
+        , image: "./assets/images/e-commerce.jpg"
 
     },
     {
@@ -171,21 +171,21 @@ export const MY_PROJECTS = [
         description: "Built a content-based movie recommendation system using TF-IDF Vectorization. Processed features such as genres, keywords, overview, tagline, title, cast, and director. Improved recommendation accuracy by leveraging text-based features and natural language processing techniques.",
         link: "https://github.com/Nandan-Yadav/Neuron-Lab-internship-projects/blob/main/movies_recomendation.ipynb",
         sector: "Entertainment",
-        image: "/assets/images/movies.jpg"
+        image: "./assets/images/movies.jpg"
     },
     {
         name: "Vehicle CO2 Emissions Prediction",
         description: "Implemented a predictive model using K-Means Clustering and Linear Regression for vehicle CO2 emissions. Achieved reduced Mean Squared Error (MSE) of 899 compared to 930 in traditional linear regression models. Published research using the Canadian Transportation Dataset.",
         link: "https://github.com/Nandan-Yadav/Projects/blob/main/predictingCO2.ipynb",
         sector: "GreenTech",
-        image: "/assets/images/co2.png"
+        image: "./assets/images/co2.png"
     },
     {
         name: "Sonar Signal Classification",
         description: "Developed a binary classification model using Python and Scikit-learn to distinguish between sonar signals reflected from rocks and mines. Achieved 92% accuracy through dimensionality reduction and hyperparameter tuning techniques."
         , link: "https://github.com/Nandan-Yadav/Neuron-Lab-internship-projects/blob/main/Rock_vs_Mine_Prediction.ipynb",
         sector: "MineTech",
-        image: "/assets/images/rock-mine.jpg"
+        image: "./assets/images/rock-mine.jpg"
     },
 
     {
@@ -193,6 +193,6 @@ export const MY_PROJECTS = [
         description: "Developed a Python script to automate the extraction of election results for all Indian states from Wikipedia into structured Excel reports. Analyzed voter turnout data in Power BI to uncover patterns and insights. Reduced manual data entry efforts by 99% and improved data accuracy using BeautifulSoup and Pandas."
         , link: "https://github.com/Nandan-Yadav/voter-turnout-analysis/blob/main/data_scraping.ipynb",
         sector: "Political Consulting",
-        image: "/assets/images/voting-image.jpg"
+        image: "./assets/images/voting-image.jpg"
     }
 ];

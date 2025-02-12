@@ -6,7 +6,7 @@ import "../utilities/style.css";
 
 const Hero = () => {
   const handleDownloadResume = () => {
-    fetch(`/assets/${RESUME_FILE_NAME}`) // Assuming assets are in public folder
+    fetch(`./assets/${RESUME_FILE_NAME}`) // Assuming assets are in public folder
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -40,7 +40,7 @@ const Hero = () => {
         </div>
         <img
           className="profile-pic"
-          src="/assets/prfolie_pic.webp" // assets in public
+          src="./assets/prfolie_pic.webp" // assets in public
           alt={PROFILE_PIC_ALT_TEXT}
         />
       </section>
