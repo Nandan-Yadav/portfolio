@@ -1,11 +1,12 @@
 // Hero.jsx
 import React from "react";
+import { HERO_INTRO, HERO_ROLE, HERO_DESCRIPTION, RESUME_BUTTON_TEXT, RESUME_FILE_NAME, PROFILE_PIC_ALT_TEXT } from "../constants/text";
 import "../style/Hero.css";
 import "../utilities/style.css";
 
 const Hero = () => {
   const handleDownloadResume = () => {
-    fetch("/assets/Nandan_Resume.pdf")
+    fetch(`/assets/${RESUME_FILE_NAME}`) // Assuming assets are in public folder
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
@@ -16,38 +17,31 @@ const Hero = () => {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = "Nandan_Resume.pdf"; // Filename when downloaded
+        a.download = RESUME_FILE_NAME; // Filename when downloaded
         document.body.appendChild(a);
         a.click();
-        a.remove();
+        document.body.removeChild(a); // Clean up
+        window.URL.revokeObjectURL(url); // Release object URL
       })
       .catch((err) => console.error("Error downloading the file:", err));
   };
 
   return (
     <>
-      <section className="hero-section" id="about">
+      <section className="hero-section">
         <div className="profile-info">
-          <h1 className="my-name">Hi, I’m Nandan 👋</h1>
-          <p className="my-intro">
-            A passionate developer skilled in creating dynamic
-            <span className="highlight"> Web</span> and
-            <span className="highlight"> Mobile Applications</span> using
-            <span className="highlight"> React</span>,
-            <span className="highlight"> Node.js</span>, and
-            <span className="highlight"> Flutter</span>. I’m also an{" "}
-            <span className="highlight">AI/ML</span> enthusiast, constantly
-            exploring innovative solutions to solve real-world problems.
-          </p>
+          <h1 className="my-name">{HERO_INTRO}</h1>
+          <h3 className="my-role">{HERO_ROLE}</h3>
+          <p className="my-intro">{HERO_DESCRIPTION}</p>
 
           <button className="btn" onClick={handleDownloadResume}>
-            Download Resume
+            {RESUME_BUTTON_TEXT}
           </button>
         </div>
         <img
           className="profile-pic"
-          src="src/assets/prfolie_pic.webp"
-          alt="profile pic"
+          src="/assets/prfolie_pic.webp" // assets in public
+          alt={PROFILE_PIC_ALT_TEXT}
         />
       </section>
     </>
