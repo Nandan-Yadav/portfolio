@@ -7,7 +7,6 @@
   }
   
   .skills-heading {
-    font-size: var(--h1-font-size-xs);
     text-align: center;
     justify-self: center; /* Ensures heading stays centered */
     grid-column: 1 / -1;  /* Spans the entire row in the grid */
@@ -45,33 +44,13 @@
   /* Responsive Media Queries for Heading Font Size */
   
   /* sm (Mobile layout) */
-  @media (min-width: 640px) {
-    .skills-heading {
-      font-size: var(--h1-font-size-sm);
-    }
-  }
+  /* @media (min-width: 640px) {} */
   
-  @media (min-width: 768px) {
-    .skills-heading {
-      font-size: var(--h1-font-size-md);
-    }
-  }
+  /* @media (min-width: 768px) {} */
   
-  @media (min-width: 1024px) {
-    .skills-heading {
-      font-size: var(--h1-font-size-lg);
-    }
-  }
+  /* @media (min-width: 1024px) {} */
   
-  @media (min-width: 1280px) {
-    .skills-heading {
-      font-size: var(--h1-font-size-xl);
-    }
-  }
+  /* @media (min-width: 1280px) {} */
   
-  @media (min-width: 1536px) {
-    .skills-heading {
-      font-size: var(--h1-font-size-2xl);
-    }
-  }
+  /* @media (min-width: 1536px) {} */
   
