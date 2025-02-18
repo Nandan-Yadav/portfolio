@@ -2,14 +2,13 @@
 
 .about-section {
   display: flex;
-  flex-direction: column; /* Stack items vertically by default */
+  flex-direction: column; 
   padding: 10px;
   align-items: flex-start;
   margin: 7%;
   gap: 20px;
 }
 
-/* Styles for screens less than 768px (mobile layout) */
 .about-content {
   display: flex;
   flex-direction: column;
@@ -17,14 +16,11 @@
 }
 
 .about-title {
-  font-size: var(--h1-font-size-xs);
   text-align: center;
 }
 
 .about-paragraph {
-  font-size: var(--p-font-size-xs);
   text-align: center;
-  line-height: 2rem;
 }
 
 /* --------------------------------- Technologies Section --------------------------------- */
@@ -93,7 +89,6 @@
 .case-study-heading {
   text-align: center;
   font-size: var(--h1-font-size-xs);
-  font-weight: 900;
 }
 
 .case-study-description {
@@ -106,25 +101,10 @@
 /* ------------------------------------------ Media Query ----------------------------------*/
 
 /* sm (Mobile layout) */
-@media (min-width: 640px) {
-  .about-title {
-    font-size: var(--h1-font-size-sm);
-  }
-
-  .about-paragraph {
-    font-size: var(--p-font-size-sm);
-  }
-}
+/* @media (min-width: 640px) {} */
 
 /* md (Tablate layout) */
-@media (min-width: 768px) {
-  .about-title {
-    font-size: var(--h1-font-size-md);
-  }
-  .about-paragraph {
-    font-size: var(--p-font-size-md);
-  }
-}
+/* @media (min-width: 768px) {} */
 
 /* lg (Larger screen sizes) */
 @media (min-width: 1024px) {
@@ -172,33 +152,11 @@
 
   .case-study-description {
     text-align: left;
-    font-size: var(--p-font-size-sm);
-  }
-
-  .about-title {
-    font-size: var(--h1-font-size-lg);
-  }
-  .about-paragraph {
-    font-size: var(--p-font-size-lg);
   }
 }
 
 /* xl */
-@media (min-width: 1280px) {
-  .about-title {
-    font-size: var(--h1-font-size-xl);
-  }
-  .about-paragraph {
-    font-size: var(--p-font-size-xl);
-  }
-}
+/* @media (min-width: 1280px) {} */
 
 /* 2xL */
-@media (min-width: 1536px) {
-  .about-title {
-    font-size: var(--h1-font-size-2xl);
-  }
-  .about-paragraph {
-    font-size: var(--p-font-size-2xl);
-  }
-}
+/* @media (min-width: 1536px) {}  */

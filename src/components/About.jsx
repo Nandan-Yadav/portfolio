@@ -3,7 +3,6 @@
 import React from "react";
 import { ABOUT_ME_TITLE, ABOUT_ME_DESCRIPTION, TECHNOLOGIES_TITLE, TECHNOLOGIES_LIST, FUTURE_PROJECTS_TITLE, MATCH_AI_PROJECT_TITLE, MATCH_AI_PROJECT_DESCRIPTION, LOAN_TRACKING_PROJECT_TITLE, LOAN_TRACKING_PROJECT_DESCRIPTION } from "../constants/text";
 import "../style/About.css";
-import "../utilities/style.css";
 
 const About = () => {
   return (
