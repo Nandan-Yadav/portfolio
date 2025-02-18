@@ -90,10 +90,9 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact-section">
-      <h2>Get In Touch</h2>
+      <h1>Get In Touch</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      </p>
+      Have a question or an exciting opportunity? Fill out the form below, and I'll get back to you as soon as possible. Looking forward to collaborating!      </p>
       {formSubmitted ? (
         <div className="success-message">Thank you for your message! We'll be in touch soon.</div>
       ) : (
@@ -144,11 +143,11 @@ const Contact = () => {
             {errors.message && <div className="error">{errors.message}</div>}
           </div>
 
-          <button type="submit" disabled={isSubmitting}>
+          <button type="submit" disabled={isSubmitting} className='btn'>
             {isSubmitting ? (
               <span className="spinner"></span> // Replace with your spinner/loader
             ) : (
-              'Submit >'
+              'Submit'
             )}
           </button>
             {submissionError && <div className="error">{submissionError}</div>}
