@@ -23,9 +23,9 @@ const Projects = () => {
             alt={`Screenshot of ${project.name}`}
           />
           <div className="project-content">
-            <h1 className="project-title">
+            <h2 className="project-title">
               {project.name + " "}
-            </h1>
+            </h2>
             <span
                 className="project-sector"
                 style={{
