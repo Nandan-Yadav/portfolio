@@ -2,7 +2,6 @@
 import React from "react";
 import { HERO_INTRO, HERO_ROLE, HERO_DESCRIPTION, RESUME_BUTTON_TEXT, RESUME_FILE_NAME, PROFILE_PIC_ALT_TEXT } from "../constants/text";
 import "../style/Hero.css";
-import "../utilities/style.css";
 
 const Hero = () => {
   const handleDownloadResume = () => {
@@ -30,17 +29,17 @@ const Hero = () => {
     <>
       <section className="hero-section">
         <div className="profile-info">
-          <h1 className="my-name">{HERO_INTRO}</h1>
-          <h3 className="my-role">{HERO_ROLE}</h3>
+          <h3 className="my-name">{HERO_INTRO}</h3>
+          <h1 className="my-role">{HERO_ROLE}</h1>
           <p className="my-intro">{HERO_DESCRIPTION}</p>
 
-          <button className="btn" onClick={handleDownloadResume}>
+          <button className="downld-btn btn" onClick={handleDownloadResume}>
             {RESUME_BUTTON_TEXT}
           </button>
         </div>
         <img
           className="profile-pic"
-          src="./assets/prfolie_pic.webp" // assets in public
+          src="./assets/portfolio_pic.jpeg" // assets in public
           alt={PROFILE_PIC_ALT_TEXT}
         />
       </section>
